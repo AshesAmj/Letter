@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBD6BB"
+    tools:context="com.example.qinjunhong.letter.ListActivity">
+
+    <fragment
+    android:layout_width="420dp"
+    android:layout_height="340dp"
+    android:id="@+id/framlist" android:name="com.example.qinjunhong.letter.ListFragment"
+    tools:layout_editor_absoluteY="42dp"
+    tools:layout_editor_absoluteX="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/frambutton"
+        android:layout_alignParentTop="true">
+
+    </fragment>
+    <fragment
+        android:layout_width="383dp"
+        android:layout_height="109dp"
+        android:id="@+id/frambutton"
+        tools:layout_editor_absoluteY="411dp"
+        android:name="com.example.qinjunhong.letter.ButtonFragment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </fragment>
+
+</RelativeLayout>

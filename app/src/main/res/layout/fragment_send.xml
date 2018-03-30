@@ -1,0 +1,156 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qinjunhong.letter.SendFragment"
+    android:background="#EBD6BB">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textRecevie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="38dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="36dp"
+            android:text="Recevier" />
+
+        <TextView
+            android:id="@+id/rename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="NAME"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_alignBaseline="@+id/ReName"
+            android:layout_alignBottom="@+id/ReName"
+            android:layout_alignRight="@+id/textRecevie"
+            android:layout_alignEnd="@+id/textRecevie" />
+
+        <TextView
+            android:id="@+id/readdress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="ADDRESS"
+            android:layout_alignBaseline="@+id/ReAddress"
+            android:layout_alignBottom="@+id/ReAddress"
+            android:layout_alignLeft="@+id/rename"
+            android:layout_alignStart="@+id/rename" />
+
+        <EditText
+            android:id="@+id/ReName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textRecevie"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/rename"
+            android:layout_toRightOf="@+id/rename"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/ReAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Address"
+            android:layout_below="@+id/ReName"
+            android:layout_alignLeft="@+id/ReName"
+            android:layout_alignStart="@+id/ReName"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/textsender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ReAddress"
+            android:layout_alignRight="@+id/ReAddress"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:text="Sender" />
+
+        <TextView
+            android:id="@+id/sename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textsender"
+            android:layout_alignStart="@+id/textsender"
+            android:layout_below="@+id/textsender"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="38dp"
+            android:text="NAME" />
+
+        <TextView
+            android:id="@+id/seaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sename"
+            android:layout_alignStart="@+id/sename"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/sename"
+            android:layout_marginTop="34dp"
+            android:text="ADDRESS" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="42dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
+            android:text="SEND"
+            android:background="#A9EDD6"/>
+
+        <EditText
+            android:id="@+id/SeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:layout_alignBaseline="@+id/sename"
+            android:layout_alignBottom="@+id/sename"
+            android:layout_toLeftOf="@+id/buttonSend"
+            android:layout_toStartOf="@+id/buttonSend"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/SeAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/SeName"
+            android:layout_alignStart="@+id/SeName"
+            android:layout_below="@+id/SeName"
+            android:ems="10"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            android:text="Address" />
+    </RelativeLayout>
+</FrameLayout>

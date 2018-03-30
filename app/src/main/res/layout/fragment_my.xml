@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBD6BB"
+    tools:context="com.example.qinjunhong.letter.MyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:id="@+id/textName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="63dp"
+           android:layout_marginStart="63dp"
+           android:layout_marginTop="151dp"
+           android:text="Name"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:textSize="18dp"
+           android:textStyle="bold"/>
+
+       <TextView
+           android:id="@+id/textAddress"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/textName"
+           android:layout_alignStart="@+id/textName"
+           android:layout_below="@+id/textName"
+           android:layout_marginTop="128dp"
+           android:text="Address"
+           android:textSize="18dp"
+           android:textStyle="bold"/>
+
+       <EditText
+           android:id="@+id/editText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="14dp"
+           android:layout_marginStart="14dp"
+           android:ems="10"
+           android:inputType="textPersonName"
+           android:text=""
+           android:layout_alignBaseline="@+id/textName"
+           android:layout_alignBottom="@+id/textName"
+           android:layout_toRightOf="@+id/textName"
+           android:layout_toEndOf="@+id/textName" />
+
+       <EditText
+           android:id="@+id/editText2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="textPersonName"
+           android:text=""
+           android:layout_alignBaseline="@+id/textAddress"
+           android:layout_alignBottom="@+id/textAddress"
+           android:layout_alignLeft="@+id/editText"
+           android:layout_alignStart="@+id/editText" />
+
+       <Button
+           android:id="@+id/buttonsave"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignEnd="@+id/editText2"
+           android:layout_alignRight="@+id/editText2"
+           android:layout_below="@+id/editText2"
+           android:layout_marginTop="68dp"
+           android:background="#A9EDD6"
+           android:text="SAVE" />
+   </RelativeLayout>
+
+</FrameLayout>

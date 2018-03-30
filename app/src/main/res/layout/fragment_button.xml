@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qinjunhong.letter.ButtonFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonmy"
+            android:onClick="btnMy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="77dp"
+            android:layout_marginRight="77dp"
+            android:background="#A9EDD6"
+            android:text="My"
+            android:layout_alignBaseline="@+id/buttonmailbox"
+            android:layout_alignBottom="@+id/buttonmailbox"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/buttonmailbox"
+            android:onClick="btnMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="#A9EDD6"
+            android:text="MailBox"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/buttonmy"
+            android:layout_toStartOf="@+id/buttonmy"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp" />
+    </RelativeLayout>
+
+</FrameLayout>

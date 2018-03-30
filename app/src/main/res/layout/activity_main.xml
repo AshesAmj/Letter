@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBD6BB"
+    tools:context="com.example.qinjunhong.letter.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageLogin"
+
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/loginletter"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:text="username"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/editUsername"
+        android:layout_alignBottom="@+id/editUsername"
+        android:layout_alignLeft="@+id/imageLogin"
+        android:layout_alignStart="@+id/imageLogin" />
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:layout_alignBaseline="@+id/editPassword"
+        android:layout_alignBottom="@+id/editPassword"
+        android:layout_alignLeft="@+id/textUsername"
+        android:layout_alignStart="@+id/textUsername"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/editPassword"
+        android:layout_toRightOf="@+id/textUsername"
+        android:layout_toEndOf="@+id/textUsername" />
+
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="textPassword"
+        android:layout_marginBottom="114dp"
+        android:layout_above="@+id/buttonLogin"
+        android:layout_alignLeft="@+id/editUsername"
+        android:layout_alignStart="@+id/editUsername" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:onClick="btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login in"
+        android:textStyle="bold"
+        android:background="#FFCC66"
+        android:layout_below="@+id/imageLogin"
+        android:layout_alignRight="@+id/imageLogin"
+        android:layout_alignEnd="@+id/imageLogin" />
+
+    <Button
+        android:id="@+id/buttonSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFCC66"
+        android:text="Sign up"
+        android:textStyle="bold"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_alignLeft="@+id/buttonLogin"
+        android:layout_alignStart="@+id/buttonLogin"
+        android:layout_marginTop="19dp" />
+</RelativeLayout>
