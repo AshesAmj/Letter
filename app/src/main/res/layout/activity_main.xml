@@ -86,6 +86,7 @@
         android:layout_height="wrap_content"
         android:background="#FFCC66"
         android:text="Sign up"
+        android:onClick="btnSignup"
         android:textStyle="bold"
         android:layout_below="@+id/buttonLogin"
         android:layout_alignLeft="@+id/buttonLogin"
